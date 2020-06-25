@@ -1,0 +1,14 @@
+Desafios:
+
+1 - Fixe o pulo duplo em no máximo 2!
+
+2 - Faça um background com aparência 3D usando duas imagens 
+diferentes, com velocidades diferentes. É o efeito paralaxe. 
+Para isso, você precisa que o da frente tenha transparência
+
+3 - Coloque elementos diferentes em seu jogo: abelhas, 
+borboletas, o que você achar que vai ficar legal!
+
+4 - Faça uma tela de game over mais elaborada, 
+explicando o que aconteceu com a personagem e porque a 
+essoa perdeu.

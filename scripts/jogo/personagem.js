@@ -25,4 +25,16 @@ class Personagem extends Animacao
         this.y = this.yInicial;
     }
   }
+
+  estaColidindo(inimigo)
+  {
+    const precisao = 0.69;
+    const colisao = collideRectRect(this.x , this.y,
+                    this.largura * precisao, this.altura * precisao,
+                    inimigo.x, inimigo.y,
+                    inimigo.largura, inimigo.altura);
+
+    return colisao;
+  }
+
 }

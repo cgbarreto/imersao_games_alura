@@ -1,0 +1,16 @@
+1 - Organizar a matriz no personagem.js, 
+tirando os números fixos e substituindo-os por um cálculo
+
+2 - Criar sua conta no codepen.io
+
+3 - Criar a história da bruxa Hipsta. Por que ela está 
+andando nessa floresta?
+
+4 - Fazer seus próprios sprites, criando um jogo com visual 
+bem diferente! Homenageie seu heroi preferido, seu youtuber 
+mais amado :).
+
+5 - Deixar a função de imagem mais limpa e organizada!
+
+6 - Marque o Paulo, a Juliana e o Guilherme com a hashtag 
+#ImersaoGameDev pra vermos como ficou o seu jogo!
