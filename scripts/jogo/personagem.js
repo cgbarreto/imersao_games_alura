@@ -33,10 +33,9 @@ class Personagem {
 
   constroiMatriz(matriz)
   {
-    
-    for(var j = 0; j < this.auxSizeY; j++)
+    for(let j = 0; j < this.auxSizeY; j++)
     {
-      for(var i = 0; i < this.auxSizeX; i++)
+      for(let i = 0; i < this.auxSizeX; i++)
       {
           matriz.push([i * this.xSize, j * this.ySize]);
       }
