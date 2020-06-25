@@ -1,44 +1,28 @@
-class Personagem {
-  constructor(imagem,personagemSize) 
+class Personagem extends Animacao 
+{
+  constructor(matriz, imagem, x, largura, altura, larguraSprite, alturaSprite) 
   {
-    this.imagem = imagem;
-    this.xSize = personagemSize[0];
-    this.ySize = personagemSize[1];
-    this.auxSizeX = imagemPersonagem.get().width/this.xSize;
-    this.auxSizeY = imagemPersonagem.get().height/this.ySize;
-    
-    this.matriz = [];
-    this.constroiMatriz(this.matriz);
+      super(matriz, imagem, x, largura, altura, larguraSprite, alturaSprite);
 
-    this.frameAtual = 0;
+      this.yInicial = height - this.altura;
+      this.y = this.yInicial;
+
+      this.velocidadeDoPulo = 0;
+      this.gravidade = 3;
   }
   
-  exibe()
+  pula() 
   {
-    image(this.imagem, 0, height - (this.ySize / 2) , this.xSize / 2, this.ySize / 2, 
-          this.matriz[this.frameAtual][0], this.matriz[this.frameAtual][1], this.xSize, this.ySize);
-    
-    this.anima();
+    this.velocidadeDoPulo = -30;
   }
-  
-  anima()
+  aplicaGravidade()
   {
-    this.frameAtual++;
-    
-    if(this.frameAtual >= this.matriz.length - 1) 
-    {
-      this.frameAtual = 0;
-    }   
-  }
+    this.y = this.y + this.velocidadeDoPulo;
+    this.velocidadeDoPulo = this.velocidadeDoPulo + this.gravidade
 
-  constroiMatriz(matriz)
-  {
-    for(let j = 0; j < this.auxSizeY; j++)
+    if(this.y > this.yInicial)
     {
-      for(let i = 0; i < this.auxSizeX; i++)
-      {
-          matriz.push([i * this.xSize, j * this.ySize]);
-      }
+        this.y = this.yInicial;
     }
   }
 }
